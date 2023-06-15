@@ -34,9 +34,7 @@
 ## 🛠 Built With <a name="built-with"></a>
 
   <ul>
-    <li>HTML</li>
     <li>CSS</li>
-    <li>JavaScript</li>
     <li>React</li>
   </ul>
 
@@ -54,7 +52,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Project Demo](https://math-magicians-294.netlify.app/)
+- [Live Project Demo]()
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -70,7 +68,7 @@ In order to run this project you need:
 
 ```
    ssh code:
-   git@github.com:Nasirkhan294/math-magicians.git
+   git@github.com:Nasirkhan294/random-user.git
 ```
 
 ### Setup
@@ -79,7 +77,7 @@ Clone this repository to your desired folder:
 
 ```
   cd desired-folder
-  git clone git@github.com:Nasirkhan294/math-magicians.git
+  git clone git@github.com:Nasirkhan294/random-user.git
 ```
 
 ### Deployment
