@@ -36,6 +36,7 @@
   <ul>
     <li>CSS</li>
     <li>React</li>
+    <li>Redux</li>
   </ul>
 
 <!-- Features -->

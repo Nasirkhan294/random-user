@@ -1,10 +1,10 @@
-const User = ({ name, gender, email }) => {
+const User = ({ name, country, picture }) => {
 	
 	return (
-		<div>
-			<h1>{name}</h1>
-			<p>{gender}</p>
-			<p>{email}</p>
+		<div className="user-tag">
+			<p className="country">{country}</p>
+			<img src={picture} alt="User" />
+			<h2 className="name">{name}</h2>
 		</div>
 	)
 }

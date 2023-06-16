@@ -1,8 +1,8 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 
-export const getUser = createAsyncThunk('user/getUser', async() => {
+export const getUser = createAsyncThunk('user/getUser', async(numUsers) => {
 	try {
-		const res = await fetch('https://randomuser.me/api/?results=5');
+		const res = await fetch(`https://randomuser.me/api/?results=${numUsers}`);
 		const data = await res.json();
 		return data.results;
 	} catch (error) {

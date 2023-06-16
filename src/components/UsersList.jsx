@@ -3,6 +3,7 @@ import { useEffect } from "react";
 import { useDispatch } from "react-redux";
 import { getUser } from "../redux/users/usersSlice";
 import User from "./User";
+import UserResults from "./UserResults";
 
 const UsersList = () => {
 	const { users, isLoading, error } = useSelector((state) => state.users);
@@ -10,7 +11,7 @@ const UsersList = () => {
 	const dispatch = useDispatch();
 
 	useEffect(() => {
-		dispatch(getUser())
+		dispatch(getUser(6))
 	}, [dispatch])
 
 
@@ -24,14 +25,17 @@ const UsersList = () => {
 
 
 	return (
-		<ul>{users.map((user, index) => (
-			<User
-				key={index}
-				name={user.name.first}
-				gender={user.gender}
-				email={user.email}
-			/>
-		))}</ul>
+		<div className="container">
+		    <UserResults />
+			<ul>{users.map((user, index) => (
+				<User
+					key={index}
+					name={user.name.first}
+					country={user.location.country}
+					picture={user.picture.medium}
+				/>
+			))}</ul>
+		</div>
 	)
 }
 

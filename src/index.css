@@ -1,13 +1,92 @@
-body {
+* {
+  box-sizing: border-box;
+  padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  font-family: serif;
+  font-size: 16px;
+  background-color: #b8b7b7;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  position: relative;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  background-color: #4e4d4d;
+  color: #fff;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+}
+
+.container {
+  position: absolute;
+  top: 12%;
+}
+
+ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+}
+
+.user-tag {
+  background-color: #4e4d4d;
+  padding: 1rem 0 0;
+  border-radius: 20px;
+  width: 400px;
+  margin: 20px 10px;
+  text-align: center;
+  min-height: 15rem;
+}
+
+.user-tag img {
+  border-radius: 50%;
+  border: 2px solid #fff;
+}
+
+.name,
+.country,
+.email {
+  color: #fff;
+  padding: 1rem;
+  font-size: 1.5rem;
+  word-spacing: 20px;
+}
+
+.name {
+  background-color: crimson;
+  font-size: 2rem;
+  border-radius: 5px;
+  color: #282424;
+}
+
+.user-results {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  font-size: 1.5rem;
+  margin-top: 3rem;
+}
+
+.user-results #users {
+  padding: 0.3rem 0.5rem;
+  background-color: crimson;
+  border: 2px solid #000;
+  margin-left: 1rem;
 }
