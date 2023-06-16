@@ -11,7 +11,7 @@ const UsersList = () => {
 	const dispatch = useDispatch();
 
 	useEffect(() => {
-		dispatch(getUser(6))
+		dispatch(getUser(3))
 	}, [dispatch])
 
 
